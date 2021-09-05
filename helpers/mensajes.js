@@ -1,3 +1,5 @@
+
+// import colors
 require('colors');
 
 const mostrarMenu = () => {
@@ -21,7 +23,8 @@ const mostrarMenu = () => {
             input: process.stdin,
             output: process.stdout
         });
-
+        
+        // stdout  > mostrar información al usuario.
         readline.question('Seleccione una opción: ', (opt) => {
             resolve(opt);
             readline.close();
@@ -46,6 +49,8 @@ const pausa = () => {
 
 }
 
+
+// se exportan los objetos
 module.exports = {
     mostrarMenu,
     pausa
